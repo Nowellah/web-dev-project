@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+}
+nav img {
+  height: auto;
+  width: auto;
+  /* background-color: #FDFC88; */
+  /* color: #fdfc88; */
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+nav ul li a {
+  color: #079b09;
+}
+.animation {
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+  overflow: hidden;
+}
+.frame {
+  position: absolute;
+  width: auto;
+  height: 800px;
+  opacity: 0;
+  object-fit: cover;
+  animation: fade 8s infinite;
+}
+.frame img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.frame:nth-child(1) {
+  animation-delay: 0s;
+}
+.frame:nth-child(2) {
+  animation-delay: 2s;
+}
+.frame:nth-child(3) {
+  animation-delay: 4s;
+}
+.frame:nth-child(4) {
+  animation-delay: 6s;
+}
+.frame:nth-child(5) {
+  animation-delay: 8s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 20px;
+  padding: 20px;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  flex: 1;
+}
+.text-columns {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+
+  gap: 20px;
+}
+.column {
+  column-count: 2;
+}
+
+/*  */
+#text-overlay {
+  position: relative;
+  text-align: center;
+  margin-bottom: 70px;
+  /* overflow: hidden; */
+}
+#behind {
+  font-size: 140px;
+  color: #e8d0b8;
+  text-align: center;
+  font-family: Herr Von Muellerhoff;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+#front {
+  text-align: center;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+/* #text-o{
+  position: relative;
+  text-align: left;
+  margin-bottom: 70px;
+}
+#behin{
+   font-size: 100px;
+  color: #e8d0b8;
+  text-align: left;
+  font-family: Herr Von Muellerhoff;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+
+}
+#fron{
+  text-align: center;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+} */
+
+.vc_custom_1633932977132{
+  margin-top: -20px !important;
+  padding-top: 5px !important;
+}
+.room-card{
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  padding: 28px 30px 35px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+}
+.room-img {
+  width: 30%;
+  vertical-align: middle;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  /* height: auto; */
+}
+.room-title{
+  margin-bottom: 3px;
+}
+.room-occupancy{
+  padding-top: 0;
+  border: none;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+.room-content{
+  margin-bottom: 22px;
+  min-height: 72px;
+}
+.room-img img {
+  width: 100%;
+  height: auto;
+}
+
+.room-info {
+  /* padding: 15px; */
+  margin-top: 5px;
+  font-size: 14px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+button {
+  background: none;
+  border: 1px solid gold;
+  color: #555;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent;
+}
+button:hover {
+  background-color: gold;
+  color: white;
+}
