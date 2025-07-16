@@ -578,3 +578,28 @@ li.dropdownbtn{
   left: 20px;
 
 }
+.textt{
+  margin-bottom: 30px;
+}
+.imagecontainer{
+  display: flex;
+   gap: 30px; 
+ margin-top: 40px;
+ margin-bottom: 40px;
+  overflow: auto;
+ height: auto;
+ flex-wrap: wrap;
+ margin-left: 50px;
+ overflow: hidden;
+ 
+ 
+}
+.imagecontainer img{
+  /* width: 100%;
+  height: auto; */
+  transition: transform 0.3s ease-in-out;
+
+}
+.imagecontainer img:hover{
+  transform: scale(1.1);   /*zoom in*/
+}
