@@ -10,7 +10,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    h6 {
+      font-size: 100px;
+      color: #e8d0b8;
+      font-style: italic;
+      margin: 0;
+      text-align: left;
+      font-family: Herr Von Muellerhoff;
+      font-weight: 400;
 
+    }
+  </style>
 </head>
 
 <body>
@@ -60,39 +71,37 @@
   </header>
   <br />
   <section>
-  <div class="animation" style="margin-bottom: 20px;">
-    <img src="images/room1.jpg" class="frame" alt="Agip" />
-    <img src="images/room2.jpg" class="frame" alt="Agip" />
-    <img src="images/room8.jpg" class="frame" alt="Agip" />
-    <img src="images/room7.jpg" class="frame" alt="Agip" />
-    <img src="images/room5.jpg" class="frame" alt="Agip" />
-    <img src="images/room6.jpg" class="frame" alt="Agip">
-  </div>
+    <div class="animation">
+      <img src="images/room1.jpg" class="frame" alt="Agip" />
+      <img src="images/room2.jpg" class="frame" alt="Agip" />
+      <img src="images/room8.jpg" class="frame" alt="Agip" />
+      <img src="images/room7.jpg" class="frame" alt="Agip" />
+      <img src="images/room5.jpg" class="frame" alt="Agip" />
+      <img src="images/room6.jpg" class="frame" alt="Agip">
+    </div>
   </section>
-  <br />
-
   <div class="container">
     <div class="text-o" style="position: relative; text-align: left;">
-      <h6
-        style="font-size: 100px; color: #e8d0b8; font-style: italic; margin: 0; text-align: left;font-family:Herr Von Muellerhoff;font-weight:400;"
-        class="vc_custom_heading   text-left">Welcome</h6>
+      <h6>Welcome</h6>
       <h3
-        style="font-size: 48px;text-align: left; top: 30px; left: 50%; transform: translateX(-50%); position: absolute; font-family:Roboto;font-weight:700;font-style:normal"
+        style="font-size: 48px;text-align: left; top: 80px; left: 50%; transform: translateX(-50%); position: absolute; font-family:Roboto;font-weight:700;font-style:normal"
         class="vc_custom_heading vc_custom_1633932977132   text-left">Agip Motel Mbarara</h3>
     </div>
     <div class="text-columns">
       <div class="column">
-        Agip Motel, with its excellent location, diverse facilities, quality
-        service and professionalism is the number one stop for anyone going
-        through or stopping in Mbarara. Its friendly and fast service provided
-        by a highly trained staff and its well-kept and pleasant rooms makes
-        Agip Motel the preferred place for international travelers, holiday
-        makers, local businessmen, women and families. Guests can enjoy the
-        cool morning or evening breeze as they watch the birds in our small
-        bamboo forest. You can sit, relax and enjoy the spectacular
-        surroundings as you listen to nature’s bird songs. For the more
-        adventurous bird-watching groups, this stopover is ideal for viewing
-        the Ugandan species. A guest’s satisfaction is our priority.
+        <p>
+          Agip Motel, with its excellent location, diverse facilities, quality
+          service and professionalism is the number one stop for anyone going
+          through or stopping in Mbarara. Its friendly and fast service provided
+          by a highly trained staff and its well-kept and pleasant rooms makes
+          Agip Motel the preferred place for international travelers, holiday
+          makers, local businessmen, women and families.</p>
+        <p>
+          Guests can enjoy the cool morning or evening breeze as they watch the birds in our small
+          bamboo forest. You can sit, relax and enjoy the spectacular
+          surroundings as you listen to nature's bird songs. For the more
+          adventurous bird-watching groups, this stopover is ideal for viewing
+          the Ugandan species. A guest's satisfaction is our priority.</p>
       </div>
     </div>
   </div>
@@ -114,7 +123,7 @@
           The classic room is equipped with desk and chair, 1kind bed, TV and
           plenty of storage
         </p>
-        <button>Book now for $70.00</button>
+        <button class="btn">Book now for $70.00</button>
       </div>
     </div>
 
@@ -122,26 +131,26 @@
       <img loading="lazy" decoding="async" src="images/Double-or-Single-Room4-370x250.jpg" alt="reception"
         class="room-img" />
       <div class="room-info">
-        <h3>double/standard room</h3>
-        <p>2 adults and 3 children</p>
-        <p>
+        <h3>Double/Standard Room</h3>
+        <p class="room-occupancy">2 adults and 3 children</p>
+        <p class="room-content">
           Ah the humble sudio apartment, at one time this dwelling was
           considered to be ho...
         </p>
-        <button>book now for $70.00</button>
+        <button class="btn">Book now for $70.00</button>
       </div>
     </div>
 
     <div class="room-card">
       <img loading="lazy" decoding="async" src="images/twin room.jpeg" alt="twin room" class="room-img" />
       <div class="room-info">
-        <h3>twin room</h3>
-        <p>2 adults and 3children</p>
-        <p>
+        <h3>Twin Room</h3>
+        <p class="room-occupancy">2 adults and 3children</p>
+        <p class="room-content">
           The classic room is equipped with desk and chair, 2 single beds, TV
           and plenty of storage
         </p>
-        <button>book now for $70.00</button>
+        <button class="btn">Book now for $70.00</button>
       </div>
     </div>
   </div>
@@ -155,10 +164,14 @@
 </div> -->
 
   <div class="social-sidebar">
-    <a href="https://wa.me/0776531930" style="background-color: green; color: white;"  target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://linkedin.com/nowellahwalker" style="background-color: blue; color: white;" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://x.com/nowellahwalker" style="background-color: blue; color: white;" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://instagram.com/nowellahwalker" style="background-color: #CD2E95;color: white;" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/0776531930" style="background-color: green; color: white;" target="_blank"><i
+        class="fab fa-whatsapp"></i></a>
+    <a href="https://linkedin.com/nowellahwalker" style="background-color: blue; color: white;" target="_blank"><i
+        class="fab fa-linkedin"></i></a>
+    <a href="https://x.com/nowellahwalker" style="background-color: blue; color: white;" target="_blank"><i
+        class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com/nowellahwalker" style="background-color: #CD2E95;color: white;" target="_blank"><i
+        class="fab fa-instagram"></i></a>
   </div>
 
   <section class="services">
